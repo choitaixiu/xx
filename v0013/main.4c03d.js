@@ -279,10 +279,10 @@ window.boot = function () {
         BK.Script.loadlib();
     }
     else {
-        var bundledScript = settings.debug ? 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/src/project.dev.js' : 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/src/project.7148a.js';
+        var bundledScript = settings.debug ? 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/src/project.dev.js' : 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/src/project.7148a.js';
         if (jsList) {
             jsList = jsList.map(function (x) {
-                return 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/src/' + x;
+                return 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/src/' + x;
             });
             jsList.push(bundledScript);
         }
@@ -304,8 +304,8 @@ window.boot = function () {
 
     // init assets
     cc.AssetLibrary.init({
-        libraryPath: 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/res/import',
-        rawAssetsBase: 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/res/raw-',
+        libraryPath: 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/res/import',
+        rawAssetsBase: 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/res/raw-',
         rawAssets: settings.rawAssets,
         packedAssets: settings.packedAssets,
         md5AssetsMap: settings.md5AssetsMap,
@@ -341,13 +341,13 @@ if (false) {
 else if (window.jsb) {
     var isRuntime = (typeof loadRuntime === 'function');
     if (isRuntime) {
-        require('https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/src/settings.205d8.js');
-        require('https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/src/cocos2d-runtime.js');
+        require('https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/src/settings.205d8.js');
+        require('https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/src/cocos2d-runtime.js');
         require('jsb-adapter/engine/index.js');
     }
     else {
-        require('https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/src/settings.205d8.js');
-        require('https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/src/cocos2d-jsb.js');
+        require('https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/src/settings.205d8.js');
+        require('https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/src/cocos2d-jsb.js');
         require('jsb-adapter/jsb-engine.js');
     }
     window.boot();
@@ -360,7 +360,7 @@ if (window.document) {
 
     var cocos2d = document.createElement('script');
     cocos2d.async = true;
-    cocos2d.src = window._CCSettings.debug ? 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/cocos2d-js.js' : 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0012/cocos2d-js-min.3a02f.js';
+    cocos2d.src = window._CCSettings.debug ? 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/cocos2d-js.js' : 'https://cdn.jsdelivr.net/gh/choitaixiu/xx@master/v0013/cocos2d-js-min.3a02f.js';
 
     var engineLoaded = function () {
         document.body.removeChild(cocos2d);
